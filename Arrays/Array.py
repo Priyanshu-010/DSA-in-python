@@ -48,3 +48,16 @@ for i in abc:
 
 
 print("\n")
+
+
+arr = [1,2,3,4]
+arr1 = arr  # deep copy of the array
+arr1[0] = 100
+print(arr)
+print(arr1)
+
+
+arr2 = arr.copy() # shallow copy of the array
+arr2[0] = 200
+print(arr)
+print(arr2) 
