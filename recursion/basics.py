@@ -1,3 +1,13 @@
+def printName(name, n):
+  # base case
+  if  n == 6:
+    return
+  # recursive case
+  print(name)
+  printName(name, n+1)
+
+printName('Priyanshu', 1)
+
 def printNumber(i, n):
   # base case
   if i > n:
