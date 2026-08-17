@@ -46,3 +46,7 @@ def merge_sort(nums):
 
 
 print(merge_sort(nums))
+
+# Explanation: The merge_sort function recursively divides the input list into halves until it reaches lists of size 1 or 0, which are inherently sorted. The merge_array function then merges these sorted halves back together in the correct order. The result is a fully sorted list.
+
+# In simple words, the merge sort algorithm divides the list into smaller sublists, sorts those sublists, and then merges them back together to form a sorted list. It is an efficient, stable, and comparison-based sorting algorithm.

@@ -25,3 +25,7 @@ def quick_sort(nums, low, high):
 
 quick_sort(nums, 0, n)
 print(nums)
+
+# Explanation: The quick_sort function recursively sorts the input list by selecting a pivot element and partitioning the list into two halves based on the pivot. The partition function rearranges the elements such that all elements less than or equal to the pivot are on the left side, and all elements greater than the pivot are on the right side. The process is repeated for each half until the entire list is sorted.
+
+# In simple words, the quick sort algorithm selects a pivot element and partitions the list into two halves based on the pivot. It then recursively sorts each half until the entire list is sorted.

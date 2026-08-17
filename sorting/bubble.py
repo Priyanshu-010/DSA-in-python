@@ -12,3 +12,8 @@ for i in range(n-2, -1, -1):
     break
 
 print(nums)
+
+
+#Explanation: The outer loop iterates from the second last index to the first index. The inner loop compares adjacent elements and swaps them if they are in the wrong order. The is_swap flag is used to check if any swaps were made during the inner loop. If no swaps were made, it means the list is already sorted, and we can break out of the loop early for efficiency.
+
+# In simple words, the bubble sort algorithm repeatedly compares adjacent elements and swaps them if they are in the wrong order. This process continues until the entire list is sorted. The algorithm gets its name because smaller elements "bubble" to the top of the list with each iteration.
