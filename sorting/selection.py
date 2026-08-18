@@ -17,3 +17,5 @@ print(arr)
 # Explanation: The selection_sort function iterates through the input list and selects the minimum element from the unsorted portion of the list. It then swaps this minimum element with the first unsorted element, effectively growing the sorted portion of the list. This process is repeated until the entire list is sorted.
 
 # In simple words, the selection sort algorithm divides the list into two parts: a sorted part and an unsorted part. It repeatedly selects the smallest element from the unsorted part and moves it to the end of the sorted part, resulting in a fully sorted list.
+
+# Time complexity: O(n^2), Space complexity: O(1)
