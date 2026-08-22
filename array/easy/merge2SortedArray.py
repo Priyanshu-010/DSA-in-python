@@ -28,3 +28,17 @@ while j<m:
   j+=1
 
 print(result)
+
+# Time Complexity O(n+m), Space Complexity O(n+m)
+
+# Code explanation: 
+
+# The while loop iterates over the elements of nums1 and nums2, comparing them in pairs.
+
+# If nums1[i] is less than nums2[j], it appends nums1[i] to the result if it's not already present. It then increments i to move to the next element in nums1.
+
+# If nums1[i] is greater than or equal to nums2[j], it appends nums2[j] to the result if it's not already present. It then increments j to move to the next element in nums2.
+
+# The while loops continue until both i and j reach the end of their respective arrays.
+
+# Finally, it appends any remaining elements in nums1 to the result and any remaining elements in nums2 to the result.
