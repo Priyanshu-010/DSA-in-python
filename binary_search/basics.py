@@ -1,5 +1,5 @@
 nums = [-1,0,3,5,9,12]
-target = 9
+target = 0
 n =len(nums)
 low = 0
 high= n-1
@@ -31,7 +31,26 @@ def bs(nums, low, high,x):
   else:
     return bs(nums,low, mid-1,x)
 
-
-print(bs(nums,low,high,target))
+# print(bs(nums,low,high,target))
 
 # Time Complexity: O(log n), Space complexity: O(1)
+
+# ================================================================
+
+# Higher and Lower Bound
+
+# Lower Bound
+
+lb = n
+
+while low <= high:
+  mid = (low+high)//2
+  if nums[mid] >= target:
+    lb = mid
+    high = mid-1
+  else:
+    low = mid+1
+
+print(lb)
+
+# Upper Bound
