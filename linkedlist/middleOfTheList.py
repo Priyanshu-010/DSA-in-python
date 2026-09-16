@@ -42,3 +42,24 @@ def print_linked_list(head):
     curr = curr.next
 
 print_linked_list(curr)
+
+# Time complexity: O(n), Space complexity: O(1)
+
+print()
+
+# Very IMPORTANT
+# Fast and slow pointer approach
+
+def fast_slow(head):
+  fast = head
+  slow = head
+  while fast != None and fast.next != None:
+    slow = slow.next
+    fast = fast.next.next
+  
+  return slow
+
+print_linked_list(fast_slow(head))
+
+# explanation: fast pointer travels two times and slow travels one time so when fast pointer reaches the end slow pointer is in the middle
+   
